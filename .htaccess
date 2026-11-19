@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirect legacy About paths to the canonical About page.
+RewriteRule ^about-me/index\.html$ https://ppsafwan.com/about-me/ [R=301,L,NC]
+RewriteRule ^about/?$ https://ppsafwan.com/about-me/ [R=301,L,NC]
+RewriteRule ^about/about\.html$ https://ppsafwan.com/about-me/ [R=301,L,NC]

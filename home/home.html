@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Safwan PP is a digital marketing strategist in Kannur, Kerala, helping local businesses grow with SEO, Google Ads, Meta Ads, web design and Shopify.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Safwan PP | Digital Marketing Strategist in Kannur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #101114;
+      --muted: #656a73;
+      --blue: #2451e6;
+      --green: #22b653;
+      --line: #e8e9ec;
+      --paper: #fff;
+      --soft: #f7f8fb;
+      --radius: 22px;
+      --content: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Raleway", sans-serif;
+    }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+    html, body { overflow-x: clip; }
+    section[id], [id]:target, #home, .hero { scroll-margin-top: 110px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Raleway", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img, svg { max-width: 100%; }
+    .container { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--blue);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { width: 20px; height: 2px; background: currentColor; content: ""; }
+    .section { padding: 100px 0; }
+    .section-heading { max-width: 700px; margin: 0 auto 46px; text-align: center; }
+    .section-heading h2 {
+      margin: 12px 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.12;
+      letter-spacing: -.055em;
+      font-weight: 850;
+    }
+    .section-heading p, .muted { color: var(--muted); }
+
+    .site-header {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid rgba(232, 233, 236, .85);
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(16px);
+    }
+    .nav { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .site-header .nav { width: min(1120px, calc(100% - 48px)); }
+    .brand { display: inline-flex; align-items: center; }
+    .site-logo { display: block; width: 78px; height: auto; }
+    .site-header .site-logo { filter: brightness(0); }
+    .footer-brand .site-logo { width: 112px; }
+    .nav-links { display: flex; align-items: center; gap: 25px; color: #464a52; font-size: .82rem; font-weight: 750; }
+    .nav-links a:hover, .footer-links a:hover { color: var(--blue); }
+    .nav-links a[aria-current="page"] { color: var(--blue); }
+    .nav-cta { padding: 10px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; font-weight: 850; }
+    .menu-toggle { display: none; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-weight: 800; cursor: pointer; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 0 70px;
+      background-image: linear-gradient(rgba(16, 17, 20, .026) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 17, 20, .026) 1px, transparent 1px);
+      background-size: 48px 48px;
+      background-position: center top;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1.03fr; align-items: center; gap: 60px; }
+    .hero-copy { position: relative; z-index: 1; }
+    .hero h1 {
+      max-width: 580px;
+      margin: 16px 0 24px;
+      font-size: clamp(3.35rem, 7vw, 5.65rem);
+      line-height: .91;
+      letter-spacing: -.085em;
+      font-weight: 900;
+    }
+    .hero h1 em { color: var(--blue); font-style: italic; }
+    .hero-copy > p { max-width: 520px; margin: 0; color: #575d67; font-size: 1.05rem; line-height: 1.75; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 28px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 20px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      font-size: .83rem;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(20, 32, 60, .1); }
+    .button-primary { border-color: var(--blue); color: #fff; background: var(--blue); }
+    .button-primary:hover { background: #193fc2; }
+    .button-blue { border-color: var(--blue); color: #fff; background: var(--blue); }
+    .button-arrow { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 50%; color: var(--blue); background: #fff; font-size: 1rem; }
+
+    .hero-art { position: relative; min-height: 425px; display: grid; place-items: center; }
+    .search-panel {
+      width: min(100%, 440px);
+      padding: 18px;
+      border-radius: 26px;
+      color: #fff;
+      background: #0c0c0e;
+      box-shadow: 0 28px 60px rgba(10, 12, 20, .18);
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 13px 15px;
+      border: 1px solid #343438;
+      border-radius: 999px;
+      color: #f3f4f6;
+      background: #19191b;
+      font-size: .76rem;
+    }
+    .search-bar svg { width: 16px; flex: 0 0 16px; color: #c5c6ca; }
+    .search-query { min-width: 0; }
+    .search-caret { width: 1px; height: 1em; flex: 0 0 1px; background: #91a8ff; animation: caret-blink .8s steps(2, start) infinite; }
+    @keyframes caret-blink { to { visibility: hidden; } }
+    .search-label { margin: 13px 5px 9px; color: #d3d5da; font-size: .62rem; font-weight: 800; letter-spacing: .09em; }
+    .search-results { transition: opacity .35s ease, transform .35s ease, visibility .35s ease; }
+    .search-panel.is-searching .search-results { transform: translateY(5px); visibility: hidden; opacity: 0; }
+    .rank-result {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      min-height: 92px;
+      padding: 15px 16px;
+      border-radius: 17px;
+      color: var(--ink);
+      background: #fff;
+    }
+    .result-domain { display: block; margin-bottom: 3px; color: #777b83; font-size: .67rem; }
+    .result-title { display: block; max-width: 250px; font-size: .88rem; font-weight: 800; line-height: 1.3; }
+    .rank-badge { display: grid; width: 66px; height: 58px; flex: 0 0 66px; align-content: center; border-radius: 14px; color: #fff; background: var(--blue); text-align: center; }
+    .rank-badge small { font-size: .46rem; font-weight: 800; }
+    .rank-badge b { font-size: 1.35rem; line-height: 1.1; }
+    .search-skeleton { display: grid; gap: 8px; margin: 8px 0; padding: 15px; border: 1px solid #202023; border-radius: 16px; }
+    .search-skeleton span { height: 8px; border-radius: 8px; background: #202023; }
+    .search-skeleton span:first-child { width: 38%; }
+    .search-skeleton span:last-child { width: 76%; }
+    .leads-card { margin-top: 10px; padding: 17px 18px 10px; border-radius: 17px; background: var(--blue); }
+    .leads-card small { font-size: .58rem; font-weight: 800; letter-spacing: .08em; }
+    .leads-card strong { display: block; margin-top: 2px; font-size: 1.8rem; letter-spacing: -.05em; }
+    .chart { display: block; width: 100%; height: 45px; margin-top: 1px; }
+    .feature-strip { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; margin-top: 54px; border: 1px solid var(--line); border-radius: 20px; background: #fff; }
+    .feature { min-height: 155px; padding: 24px 25px; }
+    .feature + .feature { border-left: 1px solid var(--line); }
+    .feature { transition: color .22s ease, background .22s ease; }
+    .feature p { transition: color .22s ease; }
+    .feature:hover { color: #fff; background: #0c0c0e; }
+    .feature:hover p { color: #c5c7ce; }
+    .feature-icon { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 13px; color: #fff; background: var(--blue); }
+    .feature-icon svg { width: 19px; height: 19px; }
+    .feature h3 { margin: 13px 0 3px; font-size: 1rem; letter-spacing: -.03em; }
+    .feature p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.55; }
+
+    .about-grid { display: grid; grid-template-columns: .85fr 1.15fr; grid-template-rows: auto 1fr; grid-template-areas: "photo title" "photo content"; align-items: start; gap: 0 70px; }
+    .about-photo { position: sticky; top: 100px; grid-area: photo; width: min(100%, 360px); height: 450px; justify-self: center; margin-top: 70px; border-radius: 24px; object-fit: cover; object-position: center 32%; }
+    .about-title { grid-area: title; margin: 0 0 25px; font-size: clamp(2.2rem, 4.2vw, 3.3rem); line-height: 1.02; letter-spacing: -.07em; }
+    .about-copy { grid-area: content; }
+    .about-summary { margin: -8px 0 18px; color: var(--muted); font-size: .88rem; line-height: 1.7; }
+    .about-points { display: grid; margin: 0 0 27px; padding: 0; list-style: none; }
+    .about-points li { display: grid; grid-template-columns: 39px 1fr; gap: 20px; padding: 17px 0; border-top: 1px solid var(--line); color: #555b64; font-size: .9rem; line-height: 1.7; }
+    .about-points li span { padding-top: 3px; color: var(--blue); font-size: .75rem; font-weight: 900; }
+
+    .brands-section { overflow: hidden; padding: 42px 0 50px; background: #fff; }
+    .brands-title { display: flex; align-items: center; justify-content: center; gap: 15px; margin: 0 0 29px; color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .11em; text-align: center; text-transform: uppercase; }
+    .brands-title::before, .brands-title::after { width: min(14vw, 150px); height: 1px; background: #d8dadd; content: ""; }
+    .brand-marquee { overflow: hidden; width: 100%; padding: 4px 0 10px; }
+    .brand-track { display: flex; width: max-content; animation: brand-scroll 42s linear infinite; }
+    .brand-marquee:hover .brand-track { animation-play-state: paused; }
+    .brand-group { display: flex; flex: 0 0 auto; align-items: center; gap: 16px; padding: 0 8px; }
+    .brand-logo { display: block; width: 180px; height: 104px; flex: 0 0 180px; padding: 20px; border: 1px solid var(--line); border-radius: 17px; background: #fff; object-fit: contain; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+    .brand-logo:hover { transform: translateY(-3px); border-color: #d3d9ee; box-shadow: 0 10px 24px rgba(20, 32, 60, .08); }
+    @keyframes brand-scroll { to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) {
+      .brand-track { animation: none; }
+      .brand-group[aria-hidden="true"] { display: none; }
+    }
+
+    .how-work-section { padding: 82px 0; color: #fff; background: #0b0b0d; }
+    .how-work-heading { max-width: 700px; margin-bottom: 32px; }
+    .how-work-heading h2 { margin: 11px 0; font-size: clamp(2.2rem, 4.5vw, 3.3rem); line-height: 1.05; letter-spacing: -.07em; }
+    .how-work-heading p { max-width: 620px; margin: 0; color: #c5c7ce; }
+    .how-work-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+    .how-work-step { display: flex; min-height: 240px; flex-direction: column; padding: 22px; border: 1px solid #303034; border-radius: 20px; background: #171719; transition: transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease; }
+    .how-work-step:hover, .how-work-step:focus-within { transform: translateY(-6px); border-color: #7894ff; background: #1d1d20; box-shadow: 0 16px 32px rgba(0, 0, 0, .28); }
+    .how-work-step > span { align-self: flex-start; padding: 5px 9px; border-radius: 999px; color: #a9bcff; background: #242d49; font-size: .75rem; font-weight: 800; letter-spacing: .02em; }
+    .how-work-step h3 { margin: 17px 0 8px; font-size: 1.15rem; font-weight: 800; line-height: 1.25; letter-spacing: -.045em; }
+    .how-work-step p { margin: 0; color: #c5c7ce; font-size: .82rem; line-height: 1.7; }
+    .how-work-cta { display: flex; justify-content: center; margin-top: 25px; }
+
+    .services-section { padding: 82px 0; background: #fff; }
+    .services-intro { display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 55px; margin-bottom: 38px; }
+    .services-intro .eyebrow { margin-bottom: 13px; }
+    .services-intro h2 { margin: 0; font-size: clamp(2.35rem, 5vw, 3.55rem); line-height: 1.03; letter-spacing: -.075em; font-weight: 900; }
+    .services-intro > p { max-width: 440px; margin: 0 0 3px; color: var(--muted); font-size: .91rem; line-height: 1.75; }
+    .services-showcase { display: grid; grid-template-columns: .92fr 1.08fr; align-items: stretch; gap: 25px; }
+    .service-list { display: grid; align-content: start; border-top: 1px solid #dfe1e5; }
+    .service-option { display: grid; width: 100%; min-height: 73px; grid-template-columns: 34px 1fr 40px; align-items: center; gap: 12px; padding: 10px 6px; border: 0; border-bottom: 1px solid #e5e6e9; color: #777b83; background: transparent; text-align: left; cursor: pointer; transition: color .2s ease; }
+    .service-option > svg { display: none; }
+    .service-option:hover, .service-option[aria-pressed="true"] { color: var(--ink); }
+    .service-option-number { color: #6f747e; font-size: .75rem; font-weight: 700; }
+    .service-option[aria-pressed="true"] .service-option-number { color: var(--blue); }
+    .service-option-title { overflow-wrap: anywhere; font-size: clamp(1.05rem, 2.2vw, 1.55rem); line-height: 1.2; letter-spacing: -.045em; font-weight: 750; text-transform: uppercase; }
+    .service-option:nth-child(3) .service-option-title, .service-option:nth-child(4) .service-option-title, .service-option:nth-child(6) .service-option-title { text-transform: none; }
+    .service-option-arrow { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: #fff; font-size: 1rem; transition: color .2s ease, border-color .2s ease, background .2s ease; }
+    .service-option-arrow span { display: inline-block; transition: transform .2s ease; }
+    .service-option:hover .service-option-arrow span, .service-option[aria-pressed="true"] .service-option-arrow span { transform: rotate(-45deg); }
+    .service-option[aria-pressed="true"] .service-option-arrow { border-color: var(--blue); color: #fff; background: var(--blue); }
+    .service-detail { position: relative; display: flex; min-height: 440px; flex-direction: column; align-items: flex-start; overflow: hidden; padding: clamp(28px, 4vw, 42px); border-radius: 25px; color: #fff; background: #0c0c0e; }
+    .service-detail-icon { position: relative; z-index: 1; display: grid; width: 54px; height: 54px; place-items: center; overflow: hidden; border-radius: 16px; color: #fff; background: var(--blue); }
+    .service-detail-icon svg { width: 25px; height: 25px; }
+    .service-detail-logo { position: absolute; top: -2px; left: -17px; width: 102px; max-width: none; height: 58px; object-fit: contain; }
+    .service-detail h3 { position: relative; z-index: 1; margin: 22px 0 10px; font-size: clamp(1.8rem, 3.2vw, 2.4rem); line-height: 1.05; letter-spacing: -.06em; }
+    .service-detail p { position: relative; z-index: 1; max-width: 560px; margin: 0; color: #c5c7ce; font-size: .92rem; line-height: 1.8; }
+    .service-detail-link { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 10px; margin-top: auto; padding: 0 0 7px; border-bottom: 1px solid #777; color: #fff; font-size: .84rem; font-weight: 800; }
+    .service-detail-link span { transition: transform .2s ease; }
+    .service-detail-link:hover span { transform: translate(3px, -3px); }
+    .service-detail-number { position: absolute; right: -9px; bottom: -96px; color: transparent; font-size: clamp(12rem, 22vw, 18rem); font-weight: 900; line-height: 1; letter-spacing: -.12em; -webkit-text-stroke: 1px rgba(255, 255, 255, .09); pointer-events: none; }
+    .services-cta { display: flex; justify-content: center; margin-top: 28px; }
+    .services-cta .button { min-height: 46px; }
+    .text-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: var(--blue); font-size: .81rem; font-weight: 850; }
+    .text-link span { transition: transform .2s ease; }
+    .text-link:hover span { transform: translateX(4px); }
+
+    .blogs-section { padding: 82px 0 76px; background: #fff; }
+    .blogs-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 38px; }
+    .blogs-header h2 { margin: 0; font-size: clamp(2.4rem, 5vw, 3.35rem); line-height: 1; letter-spacing: -.075em; font-weight: 900; }
+    .blog-controls { display: flex; gap: 9px; }
+    .blog-control { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: #fff; font-size: 1.1rem; cursor: pointer; transition: color .2s ease, border-color .2s ease, background .2s ease; }
+    .blog-control:hover:not(:disabled) { border-color: var(--ink); color: #fff; background: var(--ink); }
+    .blog-control:disabled { color: #b7bac2; cursor: not-allowed; }
+    .blog-carousel { overflow-x: auto; overflow-y: hidden; padding-bottom: 8px; scroll-behavior: smooth; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .blog-carousel::-webkit-scrollbar { display: none; }
+    .blog-track { display: flex; gap: 18px; }
+    .blog-card { display: flex; min-width: 0; flex: 0 0 calc((100% - 36px) / 3); flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: #fff; }
+    .blog-card { scroll-snap-align: start; }
+    .blog-card-visual { display: flex; min-height: 212px; align-items: flex-end; justify-content: flex-end; padding: 0 18px 4px; background: #0c0c0e; color: #fff; }
+    .blog-card[data-tone="blue"] .blog-card-visual { background: var(--blue); }
+    .blog-card[data-tone="light"] .blog-card-visual { background: #f1f1f1; color: #101114; }
+    .blog-card-visual span { font-size: clamp(4.5rem, 8vw, 6.4rem); line-height: .95; letter-spacing: -.09em; font-weight: 900; }
+    .blog-card-body { display: flex; min-height: 148px; flex: 1; flex-direction: column; align-items: flex-start; padding: 16px 19px 19px; }
+    .blog-card h3 { margin: 0 0 16px; font-size: 1.02rem; line-height: 1.4; letter-spacing: -.035em; }
+    .blog-card-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: var(--ink); font-size: .78rem; font-weight: 800; }
+    .blog-card-link span { transition: transform .2s ease; }
+    .blog-card-link:hover span { transform: translate(3px, -3px); }
+    .why-section { overflow: hidden; color: #fff; background: #0b0b0d; }
+    .why-heading { display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: 58px; margin-bottom: 48px; }
+    .why-heading .eyebrow { color: #d3d5da; }
+    .why-heading h2 { max-width: 650px; margin: 14px 0 0; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.02; letter-spacing: -.075em; font-weight: 900; }
+    .why-heading h2 em { color: #7894ff; font-style: normal; }
+    .why-heading > p { max-width: 460px; margin: 0 0 2px; color: #c5c7ce; font-size: .94rem; line-height: 1.75; }
+    .why-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 13px; }
+    .why-card { display: flex; min-height: 248px; flex-direction: column; padding: 26px; border: 1px solid #303034; border-radius: 22px; background: #171719; transition: transform .24s ease, border-color .24s ease, background .24s ease, box-shadow .24s ease; }
+    .why-card:nth-child(1) { grid-column: span 5; }
+    .why-card:nth-child(2) { grid-column: span 7; }
+    .why-card:nth-child(3) { grid-column: span 7; }
+    .why-card:nth-child(4) { grid-column: span 5; }
+    .why-card:hover { transform: translateY(-5px); border-color: #55565e; background: #1d1d20; box-shadow: 0 18px 40px rgba(0, 0, 0, .24); }
+    .why-tag { align-self: flex-start; padding: 5px 11px; border-radius: 999px; color: #fff; background: var(--blue); font-size: .68rem; font-weight: 900; letter-spacing: .07em; text-transform: uppercase; }
+    .why-card h3 { margin: 17px 0 7px; font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.25; letter-spacing: -.045em; }
+    .why-card p { margin: 0 0 18px; color: #c5c7ce; font-size: .88rem; line-height: 1.75; }
+    .why-card strong { display: flex; align-items: center; gap: 9px; margin-top: auto; padding-top: 14px; border-top: 1px solid #3a3a3e; color: #f0f0f2; font-size: .75rem; }
+    .credentials { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 20px 28px; margin-top: 34px; padding: 24px 28px; border: 1px solid #e6e7ea; border-radius: 22px; color: var(--ink); background: #fff; }
+    .credentials-label { color: #777b83; font-size: .7rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+    .credential-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .credential-list span { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid #e3e5e9; border-radius: 999px; color: #292b30; background: #fff; font-size: .71rem; font-weight: 700; }
+    .credential-list span::before { width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%; background: var(--blue); content: ""; }
+    .credentials-experience { grid-column: 1 / -1; margin: 0; padding-top: 17px; border-top: 1px solid #e6e7ea; color: #656a73; font-size: .86rem; }
+    .button-dark { min-height: 44px; padding-left: 18px; border-color: #101114; color: #fff; background: #101114; }
+    .button-dark:hover { background: #292a2e; }
+    .button-dark .button-arrow { color: var(--blue); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin-top: 54px; }
+    .stat { display: flex; min-height: 195px; flex-direction: column; align-items: flex-start; padding: 20px; border: 1px solid #303034; border-radius: 21px; background: #171719; text-align: left; transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease; }
+    .stat:hover { transform: translateY(-5px); border-color: #7894ff; box-shadow: 0 14px 32px rgba(0, 0, 0, .2); }
+    .stat strong { display: block; margin-top: auto; color: #fff; font-size: clamp(2.7rem, 5vw, 4.2rem); line-height: .95; letter-spacing: -.08em; font-variant-numeric: tabular-nums; }
+    .stat strong span { color: #7894ff; font-size: .62em; }
+    .stat > span:last-child { margin-top: 10px; color: #f0f0f2; font-size: .78rem; font-weight: 700; }
+    .stat-highlight { border-color: var(--blue); background: var(--blue); }
+    .stat-highlight:hover { border-color: #7894ff; }
+    .stat-highlight strong span { color: #d7e0ff; }
+    .certifications-section { padding-top: 82px; }
+    .certifications-section .section-heading { max-width: var(--content); margin-bottom: 38px; text-align: left; }
+    .certifications-section .section-heading h2 { margin: 0; font-size: clamp(2.35rem, 5vw, 3.35rem); font-weight: 900; }
+    .certifications-section .section-heading p { display: none; }
+    .certification-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .certification-card { min-width: 0; overflow: hidden; padding: 14px; border: 0; border-radius: 18px; color: var(--ink); background: #fff; box-shadow: 0 8px 26px rgba(20, 32, 60, .09); transition: transform .24s ease, box-shadow .24s ease; }
+    .certification-card:hover { transform: translateY(-5px); box-shadow: 0 18px 36px rgba(20, 32, 60, .14); }
+    .certificate-preview-wrap { position: relative; overflow: hidden; aspect-ratio: 1.3 / 1; border: 0; border-radius: 10px; background: #fff; }
+    .certificate-preview-wrap::after { position: absolute; inset: 0; border: 3px solid #fff; border-radius: inherit; content: ""; pointer-events: none; }
+    .certificate-preview-wrap--digital { aspect-ratio: 1.4 / 1; }
+    .certificate-preview { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border: 0; background: #fff; pointer-events: none; }
+    .certification-card h3 { margin: 14px 2px 6px; font-size: 1rem; line-height: 1.3; letter-spacing: -.035em; }
+    .certificate-open { display: inline-block; margin: 0 2px 3px; color: var(--blue); font-size: .76rem; font-weight: 800; text-decoration: none; }
+    .certificate-open:hover { text-decoration: underline; }
+    .education-note { margin: 18px 0 0; color: var(--muted); font-size: .82rem; }
+
+    .testimonial-layout { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 70px; }
+    .testimonials-heading h2 { margin: 0; font-size: clamp(2.5rem, 4.5vw, 3.5rem); line-height: 1.05; letter-spacing: -.07em; }
+    .testimonial-controls { display: flex; align-items: center; gap: 12px; margin-top: 28px; }
+    .testimonial-control { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: #fff; font-size: 1.1rem; cursor: pointer; transition: border-color .2s ease, color .2s ease, background .2s ease; }
+    .testimonial-control:hover { border-color: var(--blue); color: #fff; background: var(--blue); }
+    .testimonial-dots { display: flex; align-items: center; gap: 2px; margin-left: 4px; }
+    .testimonial-dot { display: grid; width: 36px; height: 36px; flex: 0 0 36px; place-items: center; padding: 0; border: 0; background: transparent; cursor: pointer; }
+    .testimonial-dot::before { width: 9px; height: 9px; border-radius: 999px; background: #e2e3e6; content: ""; transition: width .2s ease, background .2s ease; }
+    .testimonial-dot[aria-current="true"]::before { width: 27px; background: var(--blue); }
+    .testimonial-count { margin-left: 5px; color: var(--muted); font-size: .76rem; font-weight: 700; white-space: nowrap; }
+    .testimonial { min-width: 0; }
+    .testimonial-quote-mark { display: block; height: 54px; color: var(--blue); font-size: 5.2rem; font-weight: 900; line-height: 1; letter-spacing: -.08em; }
+    .testimonial blockquote { margin: 5px 0 25px; color: var(--ink); font-size: clamp(1.2rem, 2.2vw, 1.65rem); font-weight: 600; line-height: 1.45; letter-spacing: -.045em; }
+    .person { display: flex; align-items: center; gap: 11px; }
+    .avatar { display: grid; width: 46px; height: 46px; place-items: center; border-radius: 50%; color: #fff; background: var(--ink); font-size: .73rem; font-weight: 900; }
+    .person strong, .person small { display: block; }
+    .person strong { font-size: .83rem; }
+    .person small { color: var(--muted); font-size: .7rem; }
+
+    #faq .container { display: grid; grid-template-columns: .8fr 1.2fr; align-items: start; gap: 70px; }
+    #faq .section-heading { position: sticky; top: 110px; margin: 45px 0 0; text-align: left; }
+    #faq .section-heading h2 { margin: 0; font-size: clamp(2.5rem, 4vw, 3.4rem); font-weight: 900; }
+    .faq-list { min-width: 0; }
+    .faq-list details { margin-bottom: 8px; border: 1px solid var(--line); border-radius: 17px; background: #fff; transition: border-color .2s ease; }
+    .faq-list details[open] { border-color: #858585; }
+    .faq-list summary { position: relative; min-height: 64px; display: flex; align-items: center; padding: 15px 62px 15px 19px; cursor: pointer; font-size: .95rem; font-weight: 800; list-style: none; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { position: absolute; top: 50%; right: 16px; display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; color: var(--ink); background: #f2f2f2; content: "+"; font-size: 1.1rem; font-weight: 500; transform: translateY(-50%); }
+    .faq-list details[open] summary::after { color: #fff; background: var(--blue); content: "×"; }
+    .faq-list details p { max-width: 730px; margin: 0; padding: 0 19px 19px; color: var(--muted); font-size: .87rem; line-height: 1.65; }
+    .faq-answer { padding: 0 19px 19px; color: var(--muted); font-size: .87rem; line-height: 1.65; }
+    .faq-answer p { padding: 0 !important; }
+    .faq-answer ul { display: grid; gap: 5px; margin: 8px 0 0; padding-left: 20px; }
+
+    .contact-section { overflow: hidden; color: #fff; background: #0b0b0d; }
+    .contact-section .container { max-width: 1020px; }
+    .contact-section .eyebrow { color: #8ca7ff; }
+    .contact-title { margin: 12px 0 42px; font-size: clamp(4.5rem, 12vw, 8rem); line-height: .9; letter-spacing: -.09em; font-weight: 900; }
+    .contact-title span { color: transparent; -webkit-text-stroke: 1px #fff; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.12fr; gap: 14px; align-items: stretch; }
+    .contact-copy, .contact-form { min-width: 0; padding: 32px; border: 1px solid #303034; border-radius: 24px; background: #171719; }
+    .contact-copy h3 { margin: 0 0 2px; font-size: 1.45rem; letter-spacing: -.05em; }
+    .contact-copy > p { margin: 0; color: #b7bac2; font-size: .9rem; }
+    .contact-map { display: flex; min-height: 197px; flex-direction: column; align-items: center; justify-content: center; gap: 7px; margin-top: 18px; border: 1px solid #353539; border-radius: 16px; color: #fff; background-color: #202022; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 24px 24px; text-align: center; }
+    .contact-map:hover { border-color: #687fc2; }
+    .contact-map-pin { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; color: #fff; background: var(--blue); }
+    .contact-map-pin svg { width: 19px; height: 19px; }
+    .contact-map strong { font-size: .83rem; }
+    .contact-map small { color: #b7bac2; font-size: .72rem; }
+    .contact-details { display: grid; gap: 10px; margin-top: 17px; color: #e9eaf0; font-size: .8rem; }
+    .contact-details a:hover { color: #9db2ff; }
+    .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-field { display: grid; gap: 7px; }
+    .form-field.full { grid-column: 1 / -1; }
+    .form-field label { color: #e2e4e9; font-size: .72rem; font-weight: 800; }
+    .form-field input, .form-field select, .form-field textarea { width: 100%; min-height: 46px; padding: 11px 13px; border: 1px solid #393a42; border-radius: 12px; outline: none; color: #fff; background: #222224; font-size: .84rem; }
+    .form-field textarea { min-height: 100px; resize: vertical; }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: #708bff; box-shadow: 0 0 0 3px rgba(36, 81, 230, .2); }
+    .contact-form .button { justify-self: start; border: 0; cursor: pointer; }
+    .contact-form .button-arrow svg { width: 16px; height: 16px; }
+    .contact-form .form-note { grid-column: auto; align-self: center; margin: 0; color: #a9acb6; font-size: .7rem; }
+    .site-footer, .site-footer * { font-family: "Inter", sans-serif; }
+    .site-footer { padding: 58px 0 20px; color: #fff; background: #0b0b0d; font-size: 16px; font-weight: 400; }
+    .footer-grid { display: grid; grid-template-columns: minmax(220px, 1.7fr) repeat(4, minmax(0, 1fr)); gap: clamp(24px, 4vw, 56px); padding-bottom: 48px; }
+    .footer-brand .brand { display: inline-flex; margin-bottom: 16px; color: #fff; }
+    .footer-brand p { max-width: 290px; margin: 0; color: #fff; font-size: 16px; line-height: 1.75; }
+    .footer-socials { display: flex; align-items: center; gap: 22px; margin-top: 20px; }
+    .footer-socials a, .footer-socials span { display: grid; width: 22px; height: 22px; place-items: center; color: #fff; }
+    .footer-socials a { transition: color .2s ease, transform .2s ease; }
+    .footer-socials a:hover { transform: translateY(-2px); color: #fff; }
+    .footer-socials svg { width: 20px; height: 20px; fill: none; }
+    .footer-socials .facebook-icon, .footer-socials a:nth-child(3) svg { fill: currentColor; }
+    .footer-column h2 { margin: 5px 0 16px; color: #fff; font-size: 16px; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; }
+    .footer-column ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .footer-column li, .footer-column a { color: #fff; font-size: 16px; line-height: 1.5; }
+    .footer-column a { transition: color .18s ease; }
+    .footer-column a:hover { color: var(--blue); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; border-top: 1px solid #292a30; color: #fff; font-size: 15px; }
+    .footer-bottom p { margin: 0; }
+    .footer-top-link { color: #fff; transition: color .18s ease; }
+    .footer-top-link:hover { color: var(--blue); }
+    .site-footer a:hover, .site-footer a:focus-visible { color: var(--blue); }
+    .footer-brand p,
+    .footer-column h2,
+    .footer-column li,
+    .footer-bottom p { transition: color .18s ease, transform .18s ease; }
+    .footer-brand p:hover,
+    .footer-column h2:hover,
+    .footer-column li:hover,
+    .footer-bottom p:hover { color: #9db2ff; transform: translateX(3px); }
+    .footer-column a,
+    .footer-top-link { display: inline-block; }
+    .footer-column a:hover,
+    .footer-column a:focus-visible,
+    .footer-top-link:hover,
+    .footer-top-link:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+    .whatsapp-float { position: fixed; z-index: 15; right: 22px; bottom: 20px; display: grid; width: 64px; height: 64px; place-items: center; border: 0; border-radius: 50%; color: #fff; background: #25d366; box-shadow: 0 8px 20px rgba(0, 0, 0, .24); transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+    .whatsapp-float:hover { transform: translateY(-3px); background: #20bd5a; box-shadow: 0 12px 26px rgba(0, 0, 0, .3); }
+    .whatsapp-float svg { width: 34px; height: 34px; }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+      .hero h1 { font-size: clamp(3.1rem, 7vw, 4.7rem); }
+      .feature { padding: 20px 16px; }
+      .about-grid { gap: 38px; }
+      .how-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-grid { gap: 14px; }
+      .why-heading { gap: 30px; }
+      .why-card:nth-child(n) { grid-column: span 6; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .blog-card { flex-basis: calc((100% - 18px) / 2); }
+      .blog-card-visual { min-height: 180px; }
+      .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 760px) {
+      #faq .container { grid-template-columns: 1fr; gap: 28px; }
+      #faq .section-heading { position: static; margin: 0; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .container { width: min(100% - 36px, var(--content)); }
+      .section { padding: 72px 0; }
+      .nav { min-height: 66px; }
+      .site-header .nav { width: min(100% - 36px, 1120px); }
+      .menu-toggle { display: inline-flex; }
+      .nav-cta { display: none; }
+      .nav-links { position: absolute; top: 65px; right: 18px; left: 18px; display: none; align-items: stretch; gap: 0; padding: 8px 16px; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 18px 35px rgba(16, 17, 20, .1); }
+      .nav-links.is-open { display: flex; flex-direction: column; }
+      .nav-links a { padding: 12px 2px; border-bottom: 1px solid var(--line); }
+      .nav-links a:last-child { border-bottom: 0; }
+      .hero { padding: 57px 0 54px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 14px; }
+      .hero h1 { max-width: 540px; font-size: clamp(3.25rem, 14vw, 5rem); }
+      .hero-copy > p { font-size: .98rem; }
+      .hero-art { min-height: 365px; margin-top: 5px; }
+      .search-panel { width: min(100% - 8px, 430px); padding: 14px; }
+      .feature-strip { grid-template-columns: 1fr 1fr; margin-top: 38px; }
+      .feature { min-height: 145px; }
+      .feature:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+      .feature:nth-child(4) { border-top: 1px solid var(--line); }
+      .about-grid { grid-template-columns: 1fr; grid-template-rows: auto auto auto; grid-template-areas: "title" "photo" "content"; gap: 0; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .how-work-grid { grid-template-columns: 1fr; }
+      .why-heading { grid-template-columns: 1fr; gap: 17px; margin-bottom: 30px; }
+      .why-card:nth-child(n) { grid-column: 1 / -1; }
+      .about-photo { position: static; width: min(100%, 320px); height: 400px; margin: 0 auto 24px; }
+      .about-title { margin-bottom: 22px; font-size: clamp(2rem, 9vw, 3rem); }
+      .contact-title { margin-bottom: 30px; font-size: clamp(4rem, 18vw, 6rem); }
+      .contact-copy, .contact-form { padding: 22px; }
+      .brand-group { gap: 12px; }
+      .brand-logo { width: 156px; height: 92px; flex-basis: 156px; padding: 17px; border-radius: 15px; }
+      .services-intro, .services-showcase { grid-template-columns: 1fr; }
+      .services-intro { gap: 17px; margin-bottom: 26px; }
+      .service-detail { min-height: 360px; }
+      .service-option { min-height: 68px; }
+      .testimonial-layout { grid-template-columns: 1fr; gap: 38px; }
+      .testimonial-controls { gap: 7px; }
+      .testimonial-control { width: 42px; height: 42px; }
+      .testimonial-count { margin-left: 2px; font-size: .68rem; }
+      .credentials { grid-template-columns: 1fr auto; gap: 16px; padding: 22px; }
+      .credentials-label { grid-column: 1 / -1; }
+      .credential-list { grid-column: 1 / -1; }
+      .credentials > .button-dark { grid-column: 1 / -1; justify-self: start; }
+      .credentials-experience { grid-column: 1 / -1; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .certification-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-grid { gap: 30px; }
+      .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 22px; padding-bottom: 34px; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+      .blogs-section { padding: 68px 0; }
+      .blogs-header { margin-bottom: 27px; }
+      .blog-controls { gap: 7px; }
+      .blog-control { width: 44px; height: 44px; }
+      .blog-track { gap: 14px; }
+      .blog-card { flex-basis: 100%; }
+      .blog-card-visual { min-height: 185px; }
+      .blog-card-visual span { font-size: 5.2rem; }
+      .blog-card-body { min-height: 142px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+      .search-caret { animation: none; }
+    }
+    @media (max-width: 390px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+      .site-header { position: sticky; z-index: 20; top: 0; border-bottom: 1px solid rgba(232,233,236,.85); background: rgba(255,255,255,.94); backdrop-filter: blur(16px); }
+    .site-header .nav { width: min(1120px,calc(100% - 48px)); min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .site-header .brand { display: inline-flex; align-items: center; }
+    .site-header .site-logo { display: block; width: 78px; height: auto; filter: brightness(0); }
+    .site-header .nav-links { display: flex; align-items: center; gap: 25px; color: #464a52; font-size: .82rem; font-weight: 750; }
+    .site-header .nav-links a:hover, .site-header .nav-links a[aria-current="page"] { color: var(--blue); }
+    .site-header .nav-cta { padding: 10px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; font-weight: 850; }
+    .site-header .menu-toggle { display: none; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-weight: 800; cursor: pointer; }
+    .site-footer, .site-footer * { font-family: Arial, sans-serif; }
+    .site-footer { padding: 58px 0 20px; color: #fff; background: #0b0b0d; font-size: 16px; font-weight: 400; }
+    .site-footer .footer-grid { display: grid; grid-template-columns: minmax(220px,1.7fr) repeat(4,minmax(0,1fr)); gap: clamp(24px,4vw,56px); padding-bottom: 48px; }
+    .site-footer .footer-brand .brand { display: inline-flex; margin-bottom: 16px; color: #fff; }
+    .site-footer .footer-brand .site-logo { width: 112px; }
+    .site-footer .footer-brand p { max-width: 290px; margin: 0; color: #fff; font-size: 16px; line-height: 1.75; }
+    .site-footer .footer-socials { display: flex; align-items: center; gap: 22px; margin-top: 20px; }
+    .site-footer .footer-socials a, .site-footer .footer-socials span { display: grid; width: 22px; height: 22px; place-items: center; color: #fff; }
+    .site-footer .footer-socials a { transition: color .2s ease, transform .2s ease; }
+    .site-footer .footer-socials a:hover { transform: translateY(-2px); color: #fff; }
+    .site-footer .footer-socials svg { width: 20px; height: 20px; fill: none; }
+    .site-footer .footer-socials .facebook-icon, .site-footer .footer-socials a:nth-child(3) svg { fill: currentColor; }
+    .site-footer .footer-column h2 { margin: 5px 0 16px; color: #fff; font-size: 16px; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; }
+    .site-footer .footer-column ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .site-footer .footer-column li, .site-footer .footer-column a { color: #fff; font-size: 16px; line-height: 1.5; }
+    .site-footer .footer-column a, .site-footer .footer-top-link { transition: color .18s ease; }
+    .site-footer .footer-column a:hover, .site-footer .footer-top-link:hover { color: var(--blue); }
+    .site-footer .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; border-top: 1px solid #292a30; color: #fff; font-size: 15px; }
+    .site-footer .footer-bottom p { margin: 0; }
+    .site-footer .footer-top-link { color: #fff; }
+    @media (max-width: 980px) {
+      .site-footer .footer-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+      .site-footer .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 720px) {
+      .site-header .nav { width: min(100% - 36px,1120px); min-height: 66px; position: relative; }
+      .site-header .menu-toggle { display: inline-flex; }
+      .site-header .nav-cta { display: none; }
+      .site-header .nav-links { position: absolute; top: 65px; right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 8px 16px; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 18px 35px rgba(16,17,20,.1); }
+      .site-header .nav-links.is-open { display: flex; flex-direction: column; }
+      .site-header .nav-links a { padding: 12px 2px; border-bottom: 1px solid var(--line); }
+      .site-header .nav-links a:last-child { border-bottom: 0; }
+      .site-footer .footer-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 30px 22px; padding-bottom: 34px; }
+      .site-footer .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 440px) {
+      .site-footer .footer-grid { grid-template-columns: 1fr; }
+      .site-footer .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+      .site-header, .site-header * { font-family: Arial, sans-serif; }
+    .site-footer > .container { width: min(1120px,calc(100% - 48px)); margin-inline: auto; }
+    @media (max-width: 720px) { .site-footer > .container { width: min(100% - 36px,1120px); } }
+      .nav-dropdown { position: relative; }
+    .nav-dropdown-head { display: flex; align-items: center; gap: 3px; }
+    .nav-dropdown-toggle { display: grid; width: 23px; height: 30px; place-items: center; padding: 0; border: 0; color: inherit; background: transparent; cursor: pointer; }
+    .nav-dropdown-toggle svg { width: 12px; height: 12px; transition: transform .18s ease; }
+    .nav-dropdown:hover .nav-dropdown-toggle svg, .nav-dropdown.is-open .nav-dropdown-toggle svg { transform: rotate(180deg); }
+    .nav-dropdown::after { position: absolute; top: 100%; left: 0; width: 100%; height: 17px; content: ""; }
+    .nav-dropdown-menu { position: absolute; z-index: 22; top: calc(100% + 17px); left: -16px; display: none; width: 190px; overflow: hidden; padding: 6px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: #fff; box-shadow: 0 16px 36px rgba(16,17,20,.12); }
+    .nav-dropdown-menu a { display: block; padding: 12px; border-radius: 7px; color: var(--ink); font-size: .74rem; font-weight: 750; line-height: 1.4; transition: color .18s ease, background .18s ease; }
+    .nav-dropdown-menu a:hover, .nav-dropdown-menu a:focus-visible { color: var(--blue); background: #f1f4ff; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+    @media (max-width: 720px) {
+      .site-header .nav-dropdown { position: relative; width: 100%; }
+      .site-header .nav-dropdown::after { display: none; }
+      .site-header .nav-dropdown-head { min-height: 45px; }
+      .site-header .nav-dropdown-head > a { flex: 1; padding: 12px 2px; }
+      .site-header .nav-dropdown-toggle { width: 42px; height: 42px; border-bottom: 1px solid var(--line); }
+      .site-header .nav-dropdown-menu { position: static; width: 100%; margin-bottom: 8px; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: #fff; box-shadow: none; }
+      .site-header .nav-dropdown.is-open .nav-dropdown-menu { display: block; }
+      .site-header .nav-dropdown-menu a { padding: 12px; border-bottom: 0; color: var(--ink); }
+    }
+</style>
+  <!-- Schema: Person, ProfessionalService, WebSite, WebPage, FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ppsafwan.com/#person",
+      "name": "Safwan PP",
+      "alternateName": "Safwan Ibn Ibrahim",
+      "jobTitle": "Freelance Digital Marketing Strategist",
+      "description": "Safwan PP is a freelance digital marketing strategist based in Narath, Kannur, Kerala. Since 2025, he has helped businesses in Kannur, North Kerala and Dubai grow with SEO, Google Ads, Meta Ads, social media marketing, web design and Shopify stores.",
+      "url": "https://ppsafwan.com/",
+      "image": "https://ppsafwan.com/wp-content/uploads/2026/01/photo_2025-12-07_22-35-39-1.webp",
+      "email": "mailto:ppsafwan263@gmail.com",
+      "telephone": "+91-9895325388",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Narath, Kannur",
+        "addressRegion": "Kerala",
+        "addressCountry": "IN"
+      },
+      "worksFor": {
+        "@id": "https://ppsafwan.com/#business"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "HACA (Haris & Co. Academy)",
+        "url": "https://harisandcoacademy.com/"
+      },
+      "knowsAbout": [
+        "Digital marketing strategy",
+        "Search engine optimization",
+        "Local SEO",
+        "Google Ads",
+        "Meta Ads",
+        "Facebook and Instagram advertising",
+        "Social media marketing",
+        "Website design",
+        "Shopify development",
+        "Google Analytics"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Google Ads Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Google"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Google Display Advertising Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Google"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Google Analytics Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Google"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "SEO Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "HubSpot Academy"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "SEMrush Academy Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Semrush"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BSc Computer Science",
+          "credentialCategory": "degree"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/safwan-ibn-ibrahim-87a281396",
+        "https://www.instagram.com/thesafwaaan?gwpx=MThjNHVwd3FxYTdseg%3D%3D&utm_source=qr"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://ppsafwan.com/#business",
+      "name": "Safwan PP – Digital Marketing Strategist in Kannur",
+      "description": "Freelance digital marketing services in Kannur: SEO, Google Ads, Meta Ads, social media marketing, website design and Shopify development.",
+      "url": "https://ppsafwan.com/",
+      "logo": "https://ppsafwan.com/wp-content/uploads/2026/10/Futuristic-SW-Monogram-Logo-1-1.png",
+      "image": "https://ppsafwan.com/wp-content/uploads/2026/01/photo_2025-12-07_22-35-39-1.webp",
+      "telephone": "+91-9895325388",
+      "email": "ppsafwan263@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Narath, Kannur",
+        "addressRegion": "Kerala",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Kannur"
+        },
+        {
+          "@type": "City",
+          "name": "Thalassery"
+        },
+        {
+          "@type": "City",
+          "name": "Taliparamba"
+        },
+        {
+          "@type": "City",
+          "name": "Payyanur"
+        },
+        {
+          "@type": "State",
+          "name": "Kerala"
+        },
+        {
+          "@type": "City",
+          "name": "Dubai"
+        }
+      ],
+      "founder": {
+        "@id": "https://ppsafwan.com/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital marketing services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO services in Kannur",
+              "url": "https://ppsafwan.com/seo-services-kannur/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Website design in Kannur",
+              "url": "https://ppsafwan.com/website-design-services-kannur/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Meta Ads services in Kannur",
+              "url": "https://ppsafwan.com/meta-ads-services-kannur/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Google Ads services in Kannur",
+              "url": "https://ppsafwan.com/google-ads-services-kannur/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Shopify development in Kannur",
+              "url": "https://ppsafwan.com/shopify-development-services-kannur/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Social media marketing in Kannur",
+              "url": "https://ppsafwan.com/social-media-marketing-kannur/"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/safwan-ibn-ibrahim-87a281396",
+        "https://www.instagram.com/thesafwaaan?gwpx=MThjNHVwd3FxYTdseg%3D%3D&utm_source=qr"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ppsafwan.com/#website",
+      "url": "https://ppsafwan.com/",
+      "name": "ppsafwan.com",
+      "publisher": {
+        "@id": "https://ppsafwan.com/#person"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ppsafwan.com/#webpage",
+      "url": "https://ppsafwan.com/",
+      "name": "Best Digital Marketing Strategist in Kannur",
+      "isPartOf": {
+        "@id": "https://ppsafwan.com/#website"
+      },
+      "about": {
+        "@id": "https://ppsafwan.com/#person"
+      },
+      "mainEntity": {
+        "@id": "https://ppsafwan.com/#business"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ppsafwan.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does a digital marketing strategist do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A digital marketing strategist helps a business grow on the internet. This is also called online marketing or internet marketing. They use things like SEO, social media, paid ads and website improvements to bring in more customers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is digital marketing important for businesses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digital marketing helps you reach more people online and turn them into customers. Today, most people search online before they buy anything. If they can't find you, they'll find someone else."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can a digital marketing strategist help my business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A digital marketing strategist in Kannur can help your business: Show up higher on Google; Get more people visiting your website; Get more quality leads (the right people asking about your services); Sell more online"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with small businesses and startups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I work with local businesses, startups, online stores and personal brands that want to grow online."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Just message or call me and book a free chat. We'll talk about your goals and plan the best way to reach them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services does a digital marketing strategist in Kannur provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A digital marketing strategist uses different ways to grow your business online. These include SEO, social media marketing, Google Ads, performance marketing, website building and online store marketing. As a top digital marketing strategist in Kannur, I help you reach the right people, get more enquiries and sell more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results from digital marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on what we do. SEO usually takes 3 to 6 months to show strong results. Google Ads and other paid ads can bring you enquiries much faster. A good plan uses both, so you get quick wins now and steady growth later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does digital marketing cost in Kannur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the service and how much work your business needs. Monthly SEO or social media management starts from [₹X]. Ad management starts from [₹X], plus the ad budget you pay Google or Meta directly. After a free call, I give you a clear price with no hidden costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum budget for Google Ads in Kannur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most local businesses, I suggest starting with at least [₹X] a day, which is about [₹X] a month, paid directly to Google. That brings enough clicks to see what works. We start small, check the results, and spend more only when it brings you leads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is better for Kerala businesses: Google Ads or Meta Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Ads works best when people are already searching for what you sell, like \"driving school near me\". Meta Ads works best for showing your products to people who aren't searching yet, like new jewellery or clothing. Many Kerala businesses get the best results by using both. I explain this in detail in my blog, Google Ads vs Meta Ads: Which Brings Better Leads in Kerala?"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should you hire a freelance digital marketing strategist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you hire a freelance digital marketing strategist in Kannur, you get more flexibility and more personal attention. Many people search for the best digital marketing agency in Kannur, but with a freelancer you talk directly to the person doing the work, and the plan is built around your business goals. That means clearer communication, a clear plan and results you can measure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can digital marketing help local businesses grow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. People nearby are searching online for businesses like yours every day. With local SEO, a well-kept Google Business Profile, Google Ads and social media, businesses in Kannur, Thalassery, Taliparamba and Payyanur can reach nearby customers and get noticed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact you for digital marketing services in Kannur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can email me or call me to talk about what your business needs. Email: ppsafwan263@gmail.com. Phone / WhatsApp: 9895325388. You can also book a free chat to get started."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../style.css">
+  <meta property="og:title" content="Safwan PP | Digital Marketing Strategist in Kannur">
+  <meta property="og:description" content="Safwan PP is a digital marketing strategist in Kannur, Kerala, helping local businesses grow with SEO, Google Ads, Meta Ads, web design and Shopify.">
+  <meta property="og:site_name" content="Safwan PP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Safwan PP | Digital Marketing Strategist in Kannur">
+  <meta name="twitter:description" content="Safwan PP is a digital marketing strategist in Kannur, Kerala, helping local businesses grow with SEO, Google Ads, Meta Ads, web design and Shopify.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://ppsafwan.com/">
+  <meta property="og:url" content="https://ppsafwan.com/">
+</head>
+<body>
+    <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="../home/home.html#home" aria-label="Safwan PP home"><img class="site-logo" src="../home/safwan-logo.png" alt="Safwan" decoding="async" width="1408" height="727"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="../home/home.html#home">Home</a>
+        <a href="../about-me/index.html#about">About</a>
+        <div class="nav-dropdown">
+  <div class="nav-dropdown-head">
+    <a href="../service/services.html#services">Services</a>
+    <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="service-submenu" aria-label="Show service links">
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m2 4.5 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </button>
+  </div>
+  <div class="nav-dropdown-menu" id="service-submenu">
+    <a href="../seo/seo.html">SEO Services</a>
+    <a href="../google%20ads/google%20ads.html">Google Ads</a>
+    <a href="../web%20design/web.html">Web Design</a>
+    <a href="../shopify/shopify.html#home">Shopify Development</a>
+    <a href="../meta%20ad/meta.html">Meta Ads</a>
+    <a href="../social%20media%20managemnt/social%20media.html">Social Media Marketing</a>
+  </div>
+</div>
+        <a href="../blog/blog.html#articles">Blogs</a>
+        <a href="../contact/contact.html#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="../contact/contact.html#contact">Let's talk <span aria-hidden="true">&#8599;</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Best Digital<br>Marketing<br>Strategist<br>in <em>Kannur</em></h1>
+            <p>Hi, I'm Safwan PP. I help businesses in Kannur and across Kerala show up on Google, get more enquiries and leads, and sell more. As a freelance digital marketer, I do this with SEO, Google Ads, Meta Ads and website design that turns visitors into customers.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Book a Free Strategy Call <span class="button-arrow" aria-hidden="true">→</span></a>
+              <a class="button" href="#services">See My Services</a>
+            </div>
+          </div>
+          <div class="hero-art" role="img" aria-label="Illustration of Google search results and growing quality leads">
+            <div class="search-panel">
+              <div class="search-bar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                <span class="search-query">digital marketing strategist in kannur</span><span class="search-caret" aria-hidden="true"></span>
+              </div>
+              <div class="search-label">SEARCH RESULTS · KANNUR</div>
+              <div class="search-results">
+                <div class="rank-result">
+                  <div><span class="result-domain">ppsafwan.com</span><span class="result-title">Best Digital Marketing Strategist In Kannur</span></div>
+                </div>
+                <div class="search-skeleton" aria-hidden="true"><span></span><span></span></div>
+                <div class="leads-card">
+                  <small>QUALITY LEADS</small>
+                  <strong>+128%</strong>
+                  <svg class="chart" viewBox="0 0 250 45" fill="none" aria-hidden="true"><path d="m6 34 31-10 23 7 28-19 25 9 27-16 29-3" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-strip" aria-label="Digital marketing services at a glance">
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></span>
+            <h3>SEO that ranks</h3><p>With local SEO in Kannur, I fix your website so nearby customers find you first on Google Search and Google Maps.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span>
+            <h3>Ads that pay back</h3><p>I run Google Ads and Facebook and Instagram ads that bring you real customers and sales, not just clicks.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M7 21h10M12 18v3M7 8h10"></path></svg></span>
+            <h3>Websites that convert</h3><p>Fast, mobile-friendly websites that get visitors to call, message or fill in your form.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 14l4-4 4 3 6-7"></path></svg></span>
+            <h3>Data-driven growth</h3><p>Simple reports from Google Analytics that show what is working, what is not, and what you get back for your money.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <h2 class="about-title">Who Is Safwan PP, and Why Can You Trust Him With Your Business?</h2>
+        <img class="about-photo" src="about-safwan.optimized.jpg" alt="Best digital marketing strategist in Kannur, Safwan PP" decoding="async" loading="lazy" width="768" height="1024">
+        <div class="about-copy">
+          <p class="about-summary">Safwan PP is a freelance digital marketing strategist based in Narath, Kannur, Kerala. Since 2025, he has helped businesses in Kannur, North Kerala and Dubai grow with SEO, Google Ads, Meta Ads, social media marketing, web design and Shopify stores.</p>
+          <ul class="about-points">
+            <li><span>01</span><div>I'm Safwan, a top digital marketing strategist in Kannur. I help businesses and personal brands grow online with online marketing plans based on real numbers.</div></li>
+            <li><span>02</span><div>I studied BSc Computer Science, so I understand how websites and technology work. I mix that with smart marketing.</div></li>
+            <li><span>03</span><div>I learned digital marketing at <strong>HACA</strong> and worked as an intern at <strong>Haris &amp; Co.</strong>, where I got real hands-on experience.</div></li>
+            <li><span>04</span><div>I know SEO (search engine optimization), Google Ads, Meta Ads, social media marketing, content marketing and website development.</div></li>
+            <li><span>05</span><div>I've worked with local shops, online stores, startups and personal brands across Kerala. I helped them get noticed, get more enquiries and grow in ways they could measure.</div></li>
+            <li><span>06</span><div>I love building marketing plans that bring the right customers to a business and turn them into buyers.</div></li>
+          </ul>
+          <a class="button" href="#contact">Know more about me <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section" aria-label="Brands Safwan has worked with">
+      <div class="container">
+        <h2 class="brands-title">Brands I've Worked With</h2>
+      </div>
+      <div class="brand-marquee" aria-label="Client logos, scrolling automatically">
+        <div class="brand-track">
+          <div class="brand-group" role="list">
+            <img class="brand-logo" src="client-logos/cowork.png" alt="Cowork" role="listitem" decoding="async" loading="lazy" width="1065" height="226">
+            <img class="brand-logo" src="client-logos/roomskart.png" alt="Roomskart" role="listitem" decoding="async" loading="lazy" width="1090" height="149">
+            <img class="brand-logo" src="client-logos/takees.png" alt="Takees" role="listitem" decoding="async" loading="lazy" width="1872" height="430">
+            <img class="brand-logo" src="client-logos/takees-estates.png" alt="Takees Estates" role="listitem" decoding="async" loading="lazy" width="2653" height="586">
+            <img class="brand-logo" src="client-logos/the-cakery.png" alt="The Cakery" role="listitem" decoding="async" loading="lazy" width="3689" height="728">
+            <img class="brand-logo" src="client-logos/haris-co.png" alt="Haris &amp; Co." role="listitem" decoding="async" loading="lazy" width="508" height="129">
+            <img class="brand-logo" src="client-logos/bosq.png" alt="BOSQ" role="listitem" decoding="async" loading="lazy" width="324" height="486">
+            <img class="brand-logo" src="client-logos/first-driving-centre.png" alt="First Driving Centre" role="listitem" decoding="async" loading="lazy" width="163" height="232">
+            <img class="brand-logo" src="client-logos/haca.png" alt="HACA" role="listitem" decoding="async" loading="lazy" width="406" height="122">
+            <img class="brand-logo" src="client-logos/skytime.png" alt="Skytime Tours &amp; Expeditions" role="listitem" decoding="async" loading="lazy" width="709" height="417">
+            <img class="brand-logo" src="client-logos/crafty-xa-tale.png" alt="Crafty XA Tale" role="listitem" decoding="async" loading="lazy" width="1014" height="734">
+            <img class="brand-logo" src="client-logos/glowra.png" alt="Glowra" role="listitem" decoding="async" loading="lazy" width="2010" height="468">
+          </div>
+          <div class="brand-group" aria-hidden="true">
+            <img class="brand-logo" src="client-logos/cowork.png" alt="" decoding="async" loading="lazy" width="1065" height="226">
+            <img class="brand-logo" src="client-logos/roomskart.png" alt="" decoding="async" loading="lazy" width="1090" height="149">
+            <img class="brand-logo" src="client-logos/takees.png" alt="" decoding="async" loading="lazy" width="1872" height="430">
+            <img class="brand-logo" src="client-logos/takees-estates.png" alt="" decoding="async" loading="lazy" width="2653" height="586">
+            <img class="brand-logo" src="client-logos/the-cakery.png" alt="" decoding="async" loading="lazy" width="3689" height="728">
+            <img class="brand-logo" src="client-logos/haris-co.png" alt="" decoding="async" loading="lazy" width="508" height="129">
+            <img class="brand-logo" src="client-logos/bosq.png" alt="" decoding="async" loading="lazy" width="324" height="486">
+            <img class="brand-logo" src="client-logos/first-driving-centre.png" alt="" decoding="async" loading="lazy" width="163" height="232">
+            <img class="brand-logo" src="client-logos/haca.png" alt="" decoding="async" loading="lazy" width="406" height="122">
+            <img class="brand-logo" src="client-logos/skytime.png" alt="" decoding="async" loading="lazy" width="709" height="417">
+            <img class="brand-logo" src="client-logos/crafty-xa-tale.png" alt="" decoding="async" loading="lazy" width="1014" height="734">
+            <img class="brand-logo" src="client-logos/glowra.png" alt="" decoding="async" loading="lazy" width="2010" height="468">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="services-intro">
+          <div>
+            <span class="eyebrow">What services I provide</span>
+            <h2>What Services Do I Provide?</h2>
+          </div>
+          <p>As a freelance digital marketing expert in Kannur, I help businesses grow online in simple ways that work. My services bring the right people to your business, send more visitors to your website, and turn those visitors into customers.</p>
+        </div>
+        <div class="services-showcase">
+          <div class="service-list" role="group" aria-label="Select a service">
+            <button class="service-option" type="button" data-service="SEO" data-description="SEO, or search engine optimization, is how you get your website to show up on Google without paying for ads. When people search on Google for something you sell, my SEO services in Kannur help your website show up. As an SEO expert in Kannur, I improve your website's words, keywords and behind-the-scenes setup so Google understands what your business does. That way, you rank higher in Google search results and get free visitors (called organic traffic) who are already looking for you." data-number="01" aria-pressed="true">
+              <span class="service-option-number">01</span><span class="service-option-title">SEO</span><span class="service-option-arrow" aria-hidden="true"><span>→</span></span>
+              <svg hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            </button>
+            <button class="service-option" type="button" data-service="Web Design" data-description="Web design is planning and building how your website looks and works. I'm a web designer offering website design in Kannur. I build clean, modern websites that are easy to use on phones, tablets and computers. A good website quickly tells people what you do and makes it easy for them to contact you. Every site I make is SEO-friendly, loads fast, is simple to move around, and matches your brand." data-number="02" aria-pressed="false">
+              <span class="service-option-number">02</span><span class="service-option-title">Web Design</span><span class="service-option-arrow" aria-hidden="true"><span>→</span></span>
+              <svg hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M7 21h10M12 18v3M7 8h10"></path></svg>
+            </button>
+            <button class="service-option" type="button" data-service="Meta Ads" data-logo="meta-logo.png" data-description="Meta Ads are paid Facebook and Instagram ads. I'm a Meta Ads expert who runs these ads for businesses in Kannur. They bring you more enquiries, calls and sales. You don't have to wait for people to find you. Your ad reaches the right people based on where they live, their age, what they like and what they do online. Every ad is tracked, so you see how many people saw it, clicked it and contacted you, and how much each lead cost. No guessing and no wasted money. Just clear numbers showing what you get back." data-number="03" aria-pressed="false">
+              <span class="service-option-number">03</span><span class="service-option-title">Meta Ads</span><span class="service-option-arrow" aria-hidden="true"><span>→</span></span>
+              <svg hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 0 8M8 8a6 6 0 0 0 0 8M12 3v18"></path><circle cx="12" cy="12" r="9"></circle></svg>
+            </button>
+            <button class="service-option" type="button" data-service="Google Ads" data-logo="google-ads-logo.png" data-description="Google Ads are paid ads that appear at the top of Google search results. With Google Ads management in Kannur, your business shows at the top of Google when someone searches for what you offer. This is also called PPC, or pay-per-click, because you only pay when someone clicks. These people are already looking, so they are much more likely to become customers. My job as your Google Ads expert is to make sure your money only goes to searches that bring customers. Every rupee is tracked. You see exactly which search, which ad and which keyword brought you each customer." data-number="04" aria-pressed="false">
+              <span class="service-option-number">04</span><span class="service-option-title">Google Ads</span><span class="service-option-arrow" aria-hidden="true"><span>→</span></span>
+              <svg hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            </button>
+            <button class="service-option" type="button" data-service="Shopify Development" data-description="Shopify is a tool that lets you build and run your own online store. As a Shopify developer in Kannur, I build simple, professional ecommerce stores for businesses that want to sell online. I design the store, add your products, set up payments and check that everything works properly. You can start selling online easily and run your store with confidence." data-number="05" aria-pressed="false">
+              <span class="service-option-number">05</span><span class="service-option-title">Shopify Development</span><span class="service-option-arrow" aria-hidden="true"><span>→</span></span>
+              <svg hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            </button>
+            <button class="service-option" type="button" data-service="SMM (Social Media Marketing)" data-description="Social media marketing means growing your business on apps people use every day. Social media marketing in Kannur helps you connect with local people on Instagram, Facebook and other apps. I create posts people enjoy, run ads and reply to your followers so your brand grows. Your brand awareness grows, more followers become customers, and your sales go up." data-number="06" aria-pressed="false">
+              <span class="service-option-number">06</span><span class="service-option-title">SMM (Social Media Marketing)</span><span class="service-option-arrow" aria-hidden="true"><span>→</span></span>
+              <svg hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg>
+            </button>
+          </div>
+          <article class="service-detail" aria-labelledby="service-detail-title" aria-live="polite">
+            <span class="service-detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            </span>
+            <h3 class="service-detail-title" id="service-detail-title">SEO</h3>
+            <p class="service-detail-description">SEO, or search engine optimization, is how you get your website to show up on Google without paying for ads. When people search on Google for something you sell, my SEO services in Kannur help your website show up. As an SEO expert in Kannur, I improve your website's words, keywords and behind-the-scenes setup so Google understands what your business does. That way, you rank higher in Google search results and get free visitors (called organic traffic) who are already looking for you.</p>
+            <a class="service-detail-link" href="#contact">Learn more <span aria-hidden="true">↗</span></a>
+            <span class="service-detail-number" aria-hidden="true">01</span>
+          </article>
+        </div>
+        <div class="services-cta"><a class="button button-blue" href="#contact">Know more <span class="button-arrow" aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section how-work-section" id="how-i-work">
+      <div class="container">
+        <div class="how-work-heading">
+          <span class="eyebrow">A clear process</span>
+          <h2>How I Work With Your Business</h2>
+          <p>Every project follows the same four simple steps, so you always know what's happening and why.</p>
+        </div>
+        <div class="how-work-grid">
+          <article class="how-work-step"><span>Step 1</span><h3>Free strategy call</h3><p>We talk about your business, your customers and your goals. I look at your website, Google listing and social media to see where you stand today.</p></article>
+          <article class="how-work-step"><span>Step 2</span><h3>A clear plan</h3><p>I tell you which services will help most, what budget is realistic, and what results to expect. No confusing words, and no long-term contract.</p></article>
+          <article class="how-work-step"><span>Step 3</span><h3>Setup and launch</h3><p>I set up your SEO, ads, website or social media myself. I also add tracking, so every enquiry and call is counted.</p></article>
+          <article class="how-work-step"><span>Step 4</span><h3>Reports and improvements</h3><p>You get simple reports showing your leads, cost per lead and what's working. I keep improving what works and fix what doesn't.</p></article>
+        </div>
+        <div class="how-work-cta"><a class="button button-primary" href="#contact">Book a Free Strategy Call <span class="button-arrow" aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="blogs-section" id="blogs">
+      <div class="container">
+        <div class="blogs-header">
+          <h2>BLOGS</h2>
+          <div class="blog-controls" aria-label="Blog slider controls">
+            <button class="blog-control" type="button" data-blog-direction="-1" aria-label="Previous blog" disabled>←</button>
+            <button class="blog-control" type="button" data-blog-direction="1" aria-label="Next blog">→</button>
+          </div>
+        </div>
+        <div class="blog-carousel" aria-label="Featured blog articles">
+          <div class="blog-track">
+            <article class="blog-card" data-tone="dark">
+              <div class="blog-card-visual" aria-hidden="true"><span>01</span></div>
+              <div class="blog-card-body"><h3>How AI Is Changing Digital Marketing for Small Businesses</h3><a class="blog-card-link" href="../blog/blog.html">Browse blog <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="blue">
+              <div class="blog-card-visual" aria-hidden="true"><span>02</span></div>
+              <div class="blog-card-body"><h3>How Google’s AI Search Is Transforming SEO And What Every Business Must Do Now</h3><a class="blog-card-link" href="../blog/blog.html">Browse blog <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="light">
+              <div class="blog-card-visual" aria-hidden="true"><span>03</span></div>
+              <div class="blog-card-body"><h3>GOOGLE ADS VS META ADS! Which Gives Better Leads in Kerala?</h3><a class="blog-card-link" href="../blog/blog.html">Browse blog <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="dark">
+              <div class="blog-card-visual" aria-hidden="true"><span>04</span></div>
+              <div class="blog-card-body"><h3>How To Build A Powerful Personal Brand For Business &amp; Marketing Freelancers</h3><a class="blog-card-link" href="../blog/blog.html">Browse blog <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="blue">
+              <div class="blog-card-visual" aria-hidden="true"><span>05</span></div>
+              <div class="blog-card-body"><h3>How To Get More Website Enquiries Without Increasing Ad Spend</h3><a class="blog-card-link" href="../blog/blog.html">Browse blog <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="light">
+              <div class="blog-card-visual" aria-hidden="true"><span>06</span></div>
+              <div class="blog-card-body"><h3>Why Your Website Gets Impressions but No Clicks: 9 SEO Fixes That Actually Matter</h3><a class="blog-card-link" href="../blog/blog.html">Browse blog <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="dark">
+              <div class="blog-card-visual" aria-hidden="true"><span>07</span></div>
+              <div class="blog-card-body"><h3>How to Get Cited in Google AI Overviews Now That Source Links Sit Higher</h3><a class="blog-card-link" href="../blog 6/blog 6.html">Read article <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="blog-card" data-tone="blue">
+              <div class="blog-card-visual" aria-hidden="true"><span>08</span></div>
+              <div class="blog-card-body"><h3>How to Set Up and Verify a Google Business Profile for Your Kerala Business</h3><a class="blog-card-link" href="../blog7/blog7.html">Read article <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="container">
+        <div class="why-heading">
+          <div>
+            <span class="eyebrow">Why Kannur businesses choose Safwan PP</span>
+            <h2>Why Kannur Businesses Choose Safwan PP, the <em>Best Digital Marketing Strategist in Kannur</em></h2>
+          </div>
+          <p>As a digital marketing expert in Kannur, I work with every client myself. I know the North Kerala and Malabar market well. And I care about results that grow your business, not numbers that only look nice.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card"><span class="why-tag">Results</span><h3>Real numbers, not just views</h3><p>As a results-driven digital marketing consultant, I track the things that bring in money: enquiries, phone calls, cost per lead and return on investment (ROI). Likes and views are nice, but they don't pay the bills.</p><strong>Every rupee tracked</strong></article>
+          <article class="why-card"><span class="why-tag">Local</span><h3>Made for the Kannur market</h3><p>I'm from Kannur. I know how people here search online, what makes them trust a business, and how local businesses compete in North Kerala. I've run campaigns for Kannur and Malabar customers, including jewellery and local lifestyle brands. This matters because people in different places buy in different ways.</p><strong>Kannur, Kerala</strong></article>
+          <article class="why-card"><span class="why-tag">Access</span><h3>You work with me, not a team</h3><p>I'm a freelance digital marketing strategist, so I do the planning, setup, improvements and reports myself. Unlike a big digital marketing agency or company, there's no middle person, and your work isn't passed from one person to another.</p><strong>Direct WhatsApp line</strong></article>
+          <article class="why-card"><span class="why-tag">Trust</span><h3>Clear budget, no lock-in</h3><p>Before we start, you'll know where your money goes and what results are realistic. If a campaign isn't working, I fix it. I don't keep it running just to keep charging you.</p><strong>No long-term contracts</strong></article>
+        </div>
+        <div class="credentials">
+          <span class="credentials-label">Backed By</span>
+          <div class="credential-list"><span>Google Ads Certified</span><span>Google Display Advertising Certified</span><span>HubSpot SEO Certified</span><span>SEMrush Academy Certified</span><span>BSc Computer Science</span></div>
+          <a class="button button-dark" href="#contact">Contact now <span class="button-arrow" aria-hidden="true">→</span></a>
+          <p class="credentials-experience">I have hands-on experience in SEO, Meta Ads, Google Ads, website design, Shopify store design and social media marketing.</p>
+        </div>
+        <div class="stats" aria-label="Experience statistics">
+          <div class="stat"><strong data-count="30" aria-label="30+"><span class="stat-value" aria-hidden="true">30</span><span>+</span></strong><span>Projects done</span></div>
+          <div class="stat"><strong data-count="18" aria-label="18+"><span class="stat-value" aria-hidden="true">18</span><span>+</span></strong><span>Campaigns run</span></div>
+          <div class="stat"><strong data-count="250" aria-label="250+"><span class="stat-value" aria-hidden="true">250</span><span>+</span></strong><span>Leads brought in</span></div>
+          <div class="stat stat-highlight"><strong data-count="100" aria-label="100%"><span class="stat-value" aria-hidden="true">100</span><span>%</span></strong><span>Happy clients</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-heading"><h2>CERTIFICATIONS</h2></div>
+        <div class="certification-grid">
+          <article class="certification-card">
+            <div class="certificate-preview-wrap"><iframe class="certificate-preview" src="certificates/analytics.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH" title="Google Analytics certificate preview" loading="lazy"></iframe></div>
+            <h3>Google Analytics Certification</h3>
+            <a class="certificate-open" href="certificates/analytics.pdf" target="_blank" rel="noopener">View certificate <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="certification-card">
+            <div class="certificate-preview-wrap"><iframe class="certificate-preview" src="certificates/google-display.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH" title="Google Display Advertising certificate preview" loading="lazy"></iframe></div>
+            <h3>Google Display Advertising</h3>
+            <a class="certificate-open" href="certificates/google-display.pdf" target="_blank" rel="noopener">View certificate <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="certification-card">
+            <div class="certificate-preview-wrap"><iframe class="certificate-preview" src="certificates/google-ads.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH" title="Google Ads certificate preview" loading="lazy"></iframe></div>
+            <h3>Google Ads Certification</h3>
+            <a class="certificate-open" href="certificates/google-ads.pdf" target="_blank" rel="noopener">View certificate <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="certification-card">
+            <div class="certificate-preview-wrap certificate-preview-wrap--digital"><iframe class="certificate-preview" src="certificates/safwan-digital-marketing.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH" title="Digital Marketing certificate preview" loading="lazy"></iframe></div>
+            <h3>Digital Marketing Certification</h3>
+            <a class="certificate-open" href="certificates/safwan-digital-marketing.pdf" target="_blank" rel="noopener">View certificate <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container testimonial-layout">
+        <div class="testimonials-heading">
+          <h2>Testimonials</h2>
+          <div class="testimonial-controls" aria-label="Testimonial controls">
+            <button class="testimonial-control" type="button" data-testimonial-prev aria-label="Previous testimonial">←</button>
+            <button class="testimonial-control" type="button" data-testimonial-next aria-label="Next testimonial">→</button>
+            <div class="testimonial-dots" aria-label="Choose a testimonial">
+              <button class="testimonial-dot" type="button" data-testimonial-dot="0" aria-label="Show testimonial 1"></button>
+              <button class="testimonial-dot" type="button" data-testimonial-dot="1" aria-label="Show testimonial 2" aria-current="true"></button>
+              <button class="testimonial-dot" type="button" data-testimonial-dot="2" aria-label="Show testimonial 3"></button>
+            </div>
+            <span class="testimonial-count" data-testimonial-count aria-live="polite">02 / 03</span>
+          </div>
+        </div>
+        <div class="testimonial-slides" aria-live="polite">
+          <article class="testimonial" data-testimonial-slide hidden><span class="testimonial-quote-mark" aria-hidden="true">“</span><blockquote>Working with Safwan was smooth and effective. His digital marketing strategy was thoughtfully planned and produced meaningful business outcomes.</blockquote><div class="person"><span class="avatar">MH</span><span><strong>Muhammed Hisham</strong><small>Digital Marketing Strategist</small></span></div></article>
+          <article class="testimonial" data-testimonial-slide><span class="testimonial-quote-mark" aria-hidden="true">“</span><blockquote>Safwan is a very reliable digital marketing strategist in Kannur. He creates clean designs and focuses on performance. This makes him a great partner for any business.</blockquote><div class="person"><span class="avatar">NM</span><span><strong>Nadheem Muhammed</strong><small>Digital Marketing Strategist</small></span></div></article>
+          <article class="testimonial" data-testimonial-slide hidden><span class="testimonial-quote-mark" aria-hidden="true">“</span><blockquote>Safwan is someone you can trust when it comes to digital marketing. He combines creativity with data-driven strategies, helping businesses improve their online presence and generate better results.</blockquote><div class="person"><span class="avatar">MN</span><span><strong>Muhammed Najash</strong><small>SEO Expert</small></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading"><h2>FAQ</h2></div>
+        <div class="faq-list">
+          <details><summary>What does a digital marketing strategist do?</summary><p>A digital marketing strategist helps a business grow on the internet. This is also called online marketing or internet marketing. They use things like SEO, social media, paid ads and website improvements to bring in more customers.</p></details>
+          <details><summary>Why is digital marketing important for businesses?</summary><p>Digital marketing helps you reach more people online and turn them into customers. Today, most people search online before they buy anything. If they can't find you, they'll find someone else.</p></details>
+          <details><summary>How can a digital marketing strategist help my business?</summary><div class="faq-answer"><p>A digital marketing strategist in Kannur can help your business:</p><ul><li>Show up higher on Google</li><li>Get more people visiting your website</li><li>Get more quality leads (the right people asking about your services)</li><li>Sell more online</li></ul></div></details>
+          <details><summary>Do you work with small businesses and startups?</summary><p>Yes. I work with local businesses, startups, online stores and personal brands that want to grow online.</p></details>
+          <details><summary>How do I get started?</summary><p>Just message or call me and book a free chat. We'll talk about your goals and plan the best way to reach them.</p></details>
+          <details><summary>What services does a digital marketing strategist in Kannur provide?</summary><p>A digital marketing strategist uses different ways to grow your business online. These include SEO, social media marketing, Google Ads, performance marketing, website building and online store marketing. As a top digital marketing strategist in Kannur, I help you reach the right people, get more enquiries and sell more.</p></details>
+          <details><summary>How long does it take to see results from digital marketing?</summary><p>It depends on what we do. SEO usually takes 3 to 6 months to show strong results. Google Ads and other paid ads can bring you enquiries much faster. A good plan uses both, so you get quick wins now and steady growth later.</p></details>
+          <details><summary>How much does digital marketing cost in Kannur?</summary><p>It depends on the service and how much work your business needs. Monthly SEO or social media management starts from [₹X]. Ad management starts from [₹X], plus the ad budget you pay Google or Meta directly. After a free call, I give you a clear price with no hidden costs.</p></details>
+          <details><summary>What is the minimum budget for Google Ads in Kannur?</summary><p>For most local businesses, I suggest starting with at least [₹X] a day, which is about [₹X] a month, paid directly to Google. That brings enough clicks to see what works. We start small, check the results, and spend more only when it brings you leads.</p></details>
+          <details><summary>Which is better for Kerala businesses: Google Ads or Meta Ads?</summary><p>Google Ads works best when people are already searching for what you sell, like "driving school near me". Meta Ads works best for showing your products to people who aren't searching yet, like new jewellery or clothing. Many Kerala businesses get the best results by using both. I explain this in detail in my blog, Google Ads vs Meta Ads: Which Brings Better Leads in Kerala?</p></details>
+          <details><summary>Why should you hire a freelance digital marketing strategist?</summary><p>When you hire a freelance digital marketing strategist in Kannur, you get more flexibility and more personal attention. Many people search for the best digital marketing agency in Kannur, but with a freelancer you talk directly to the person doing the work, and the plan is built around your business goals. That means clearer communication, a clear plan and results you can measure.</p></details>
+          <details><summary>Can digital marketing help local businesses grow?</summary><p>Yes. People nearby are searching online for businesses like yours every day. With local SEO, a well-kept Google Business Profile, Google Ads and social media, businesses in Kannur, Thalassery, Taliparamba and Payyanur can reach nearby customers and get noticed.</p></details>
+          <details><summary>How can I contact you for digital marketing services in Kannur?</summary><p>You can email me or call me to talk about what your business needs. Email: <a href="mailto:ppsafwan263@gmail.com">ppsafwan263@gmail.com</a>. Phone / WhatsApp: <a href="tel:+919895325388">9895325388</a>. You can also book a free chat to get started.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <span class="eyebrow">Contact me</span>
+        <h2 class="contact-title">Contact <span>me</span></h2>
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <h3>Let's connect</h3>
+            <p>Where your next strategy begins</p>
+            <a class="contact-map" href="https://maps.google.com/?q=Narath,+Kannur" target="_blank" rel="noopener noreferrer" aria-label="View Narath, Kannur on Google Maps">
+              <span class="contact-map-pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+              <strong>Narath, Kannur</strong>
+              <small>Tap to view map</small>
+            </a>
+            <div class="contact-details">
+              <a href="mailto:ppsafwan263@gmail.com">Email: ppsafwan263@gmail.com</a>
+              <a href="tel:+919895325388">Phone: 9895325388</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-field"><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="form-field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-field full"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="form-field full"><label for="service">Service *</label><select id="service" name="service" required><option value="" selected disabled>What service do you need?</option><option>SEO</option><option>Web Design</option><option>Meta Ads</option><option>Google Ads</option><option>Shopify Development</option><option>Social Media Marketing</option><option>Other</option></select></div>
+            <button class="button button-primary" type="submit">Submit <span class="button-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"></path></svg></span></button>
+            <p class="form-note">Submit to send your enquiry directly to WhatsApp.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="../home/home.html#home" aria-label="Safwan PP home"><img class="site-logo" src="../home/safwan-logo.png" alt="Safwan" decoding="async" width="1408" height="727"></a>
+          <p>Freelance digital marketing strategist helping businesses grow with SEO, ads, social media marketing, web design and Shopify development.</p>
+          <div class="footer-socials" aria-label="Social media">
+            <a href="https://www.instagram.com/thesafwaaan?gwpx=MThjNHVwd3FxYTdseg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+            </a>
+            <span role="img" aria-label="Facebook">
+              <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.6V13h2.7v8h3.1Z"></path></svg>
+            </span>
+            <a href="https://www.linkedin.com/in/safwan-ibn-ibrahim-87a281396" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.5H2.1V22h3.1V8.5ZM3.65 2A1.8 1.8 0 1 0 3.7 5.6 1.8 1.8 0 0 0 3.65 2ZM22 14.3c0-4.1-2.2-6-5.1-6-2.4 0-3.5 1.3-4.1 2.2V8.5H9.7V22h3.1v-6.7c0-1.8.3-3.6 2.6-3.6s2.3 2.1 2.3 3.7V22H22v-7.7Z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-column" aria-label="Explore">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="../home/home.html#home">Home</a></li>
+            <li><a href="../about-me/index.html#about">About</a></li>
+            <li><a href="../service/services.html#services">Services</a></li>
+            <li><a href="../blog/blog.html#articles">Blogs</a></li>
+            <li><a href="../contact/contact.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-column" aria-label="Services">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="../seo/seo.html">SEO Services</a></li>
+            <li><a href="../social%20media%20managemnt/social%20media.html">Social Media Marketing</a></li>
+            <li><a href="../meta%20ad/meta.html">Meta Ads</a></li>
+            <li><a href="../google%20ads/google%20ads.html">Google Ads</a></li>
+            <li><a href="../web%20design/web.html">Web Design</a></li>
+            <li><a href="../shopify/shopify.html#home">Shopify Development</a></li>
+          </ul>
+        </nav>
+        <div class="footer-column">
+          <h2>Locations</h2>
+          <ul>
+            <li><a href="../home/home.html#home">Kerala, India</a></li>
+            <li><a href="../dubai/dubai.html#home">Dubai, UAE</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="tel:+919895325388">+91 98953 25388</a></li>
+            <li><a href="mailto:ppsafwan263@gmail.com">ppsafwan263@gmail.com</a></li>
+            <li><a href="https://wa.me/919895325388" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 &middot; Safwan PP. All rights reserved.</p>
+        <a class="footer-top-link" href="#">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/919895325388" target="_blank" rel="noopener noreferrer" aria-label="Chat with Safwan on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <path d="M16 3.5a12 12 0 0 0-10.2 18.3L4.2 27.8l6.2-1.6A12 12 0 1 0 16 3.5Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"></path>
+      <path d="M12 10.2c-.4-.8-.8-.8-1.2-.8h-.9c-.4 0-.9.2-1.2.7-.4.5-1.6 1.6-1.6 3.9s1.6 4.5 1.8 4.8c.2.3 3.1 5 7.6 6.8 3.8 1.5 4.6 1.2 5.4 1.1.8-.1 2.6-1.1 3-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.9-.6l-3.1-1.5c-.4-.2-.8-.3-1.1.2-.3.5-1.2 1.5-1.5 1.8-.3.3-.6.4-1.1.1-.5-.2-2-.7-3.8-2.3-1.4-1.2-2.3-2.7-2.6-3.2-.3-.5 0-.7.2-1 .2-.2.5-.6.7-.9.2-.3.3-.5.5-.8.2-.3.1-.6 0-.8l-1.5-3.1Z" fill="currentColor" transform="translate(2 0) scale(.86)"></path>
+    </svg>
+  </a>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      navLinks.classList.toggle("is-open", !isOpen);
+    });
+
+    navLinks.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        menuButton.setAttribute("aria-expanded", "false");
+        navLinks.classList.remove("is-open");
+      }
+    });
+
+    const searchPanel = document.querySelector(".search-panel");
+    const searchQuery = document.querySelector(".search-query");
+    const searchText = searchQuery.textContent;
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      searchPanel.classList.add("is-searching");
+      searchQuery.textContent = "";
+
+      (async () => {
+        for (const character of searchText) {
+          searchQuery.textContent += character;
+          await new Promise((resolve) => setTimeout(resolve, 55));
+        }
+        await new Promise((resolve) => setTimeout(resolve, 550));
+        searchPanel.classList.remove("is-searching");
+      })();
+    }
+
+    const serviceOptions = document.querySelectorAll(".service-option");
+    const serviceDetail = document.querySelector(".service-detail");
+    const serviceDetailIcon = document.querySelector(".service-detail-icon");
+    const serviceDetailTitle = document.querySelector(".service-detail-title");
+    const serviceDetailDescription = document.querySelector(".service-detail-description");
+    const serviceDetailNumber = document.querySelector(".service-detail-number");
+    const serviceDetailLink = serviceDetail.querySelector(".service-detail-link");
+
+    const selectService = (option) => {
+        serviceOptions.forEach((item) => item.setAttribute("aria-pressed", String(item === option)));
+        serviceDetailTitle.textContent = option.dataset.service;
+        serviceDetailDescription.textContent = option.dataset.description;
+        serviceDetailNumber.textContent = option.dataset.number;
+        serviceDetailLink.href = option.dataset.service === "Web Design" ? "../web%20design/web.html" : "#contact";
+
+        if (option.dataset.logo) {
+          const logo = document.createElement("img");
+          logo.className = "service-detail-logo";
+          logo.src = option.dataset.logo;
+          logo.alt = "";
+          serviceDetailIcon.replaceChildren(logo);
+        } else {
+          const icon = option.querySelector("svg").cloneNode(true);
+          icon.removeAttribute("hidden");
+          serviceDetailIcon.replaceChildren(icon);
+        }
+    };
+
+    serviceOptions.forEach((option) => {
+      option.addEventListener("pointerenter", () => selectService(option));
+      option.addEventListener("focus", () => selectService(option));
+      option.addEventListener("click", () => selectService(option));
+    });
+
+    const testimonialSlides = [...document.querySelectorAll("[data-testimonial-slide]")];
+    const testimonialDots = [...document.querySelectorAll("[data-testimonial-dot]")];
+    const testimonialCount = document.querySelector("[data-testimonial-count]");
+    let activeTestimonial = testimonialSlides.findIndex((slide) => !slide.hidden);
+
+    const showTestimonial = (index) => {
+      activeTestimonial = (index + testimonialSlides.length) % testimonialSlides.length;
+      testimonialSlides.forEach((slide, slideIndex) => {
+        slide.hidden = slideIndex !== activeTestimonial;
+      });
+      testimonialDots.forEach((dot, dotIndex) => {
+        dot.setAttribute("aria-current", String(dotIndex === activeTestimonial));
+      });
+      testimonialCount.textContent = `${String(activeTestimonial + 1).padStart(2, "0")} / ${String(testimonialSlides.length).padStart(2, "0")}`;
+    };
+
+    document.querySelector("[data-testimonial-prev]").addEventListener("click", () => {
+      showTestimonial(activeTestimonial - 1);
+    });
+    document.querySelector("[data-testimonial-next]").addEventListener("click", () => {
+      showTestimonial(activeTestimonial + 1);
+    });
+    testimonialDots.forEach((dot) => {
+      dot.addEventListener("click", () => showTestimonial(Number(dot.dataset.testimonialDot)));
+    });
+
+    const statCounters = document.querySelectorAll(".stat strong[data-count]");
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const finishCounters = () => {
+      statCounters.forEach((counter) => {
+        counter.querySelector(".stat-value").textContent = Number(counter.dataset.count).toLocaleString();
+      });
+    };
+
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+      finishCounters();
+    } else {
+      statCounters.forEach((counter) => {
+        counter.querySelector(".stat-value").textContent = "0";
+      });
+
+      const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const counter = entry.target;
+          const value = counter.querySelector(".stat-value");
+          const target = Number(counter.dataset.count);
+          const duration = 1400;
+          const startTime = performance.now();
+
+          const animate = (currentTime) => {
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+            const easedProgress = 1 - (1 - progress) ** 4;
+            value.textContent = Math.round(target * easedProgress).toLocaleString();
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              value.textContent = target.toLocaleString();
+              observer.unobserve(counter);
+            }
+          };
+
+          requestAnimationFrame(animate);
+        });
+      }, { threshold: 0.6 });
+
+      statCounters.forEach((counter) => counterObserver.observe(counter));
+    }
+
+    const blogTrack = document.querySelector(".blog-track");
+    const blogCards = [...document.querySelectorAll(".blog-card")];
+    const blogControls = document.querySelectorAll(".blog-control");
+    let blogIndex = 0;
+
+    const updateBlogSlider = () => {
+      const visibleCards = window.matchMedia("(max-width: 680px)").matches
+        ? 1
+        : window.matchMedia("(max-width: 900px)").matches ? 2 : 3;
+      const maxIndex = Math.max(0, blogCards.length - visibleCards);
+      blogIndex = Math.min(blogIndex, maxIndex);
+
+      const cardStep = blogCards[0].getBoundingClientRect().width
+        + parseFloat(getComputedStyle(blogTrack).gap);
+      blogControls[0].disabled = blogIndex === 0;
+      blogControls[1].disabled = blogIndex === maxIndex;
+
+    };
+
+    blogControls.forEach((button) => {
+      button.addEventListener("click", () => {
+        const visibleCards = window.matchMedia("(max-width: 680px)").matches
+          ? 1
+          : window.matchMedia("(max-width: 900px)").matches ? 2 : 3;
+        const maxIndex = Math.max(0, blogCards.length - visibleCards);
+        blogIndex = Math.max(0, Math.min(maxIndex, blogIndex + Number(button.dataset.blogDirection)));
+        const cardStep = blogCards[0].getBoundingClientRect().width
+          + parseFloat(getComputedStyle(blogTrack).gap);
+        document.querySelector(".blog-carousel").scrollTo({ left: blogIndex * cardStep, behavior: "smooth" });
+      });
+    });
+
+    document.querySelector(".blog-carousel").addEventListener("scroll", () => {
+      const cardStep = blogCards[0].getBoundingClientRect().width
+        + parseFloat(getComputedStyle(blogTrack).gap);
+      const visibleCards = window.matchMedia("(max-width: 680px)").matches
+        ? 1
+        : window.matchMedia("(max-width: 900px)").matches ? 2 : 3;
+      const maxIndex = Math.max(0, blogCards.length - visibleCards);
+      blogIndex = Math.max(0, Math.min(maxIndex, Math.round(document.querySelector(".blog-carousel").scrollLeft / cardStep)));
+      updateBlogSlider();
+    }, { passive: true });
+
+    window.addEventListener("resize", updateBlogSlider);
+    updateBlogSlider();
+
+    document.querySelector("#contact-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!form.reportValidity()) return;
+
+      const values = new FormData(form);
+      const body = [
+        `Website enquiry from ${values.get("name")}`,
+        "",
+        `Name: ${values.get("name")}`,
+        `Email: ${values.get("email")}`,
+        `Phone: ${values.get("phone") || "Not provided"}`,
+        `Service: ${values.get("service")}`
+      ].join("\n");
+      window.location.href = `https://wa.me/919895325388?text=${encodeURIComponent(body)}`;
+    });
+  </script>
+  <script>
+    (() => {
+      const dropdown = document.querySelector(".nav-dropdown");
+      const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+      const nav = document.querySelector(".nav-links");
+      const menuButton = document.querySelector(".menu-toggle");
+      const setOpen = (isOpen) => {
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        dropdown.classList.toggle("is-open", isOpen);
+      };
+
+      toggle.addEventListener("click", () => {
+        setOpen(toggle.getAttribute("aria-expanded") !== "true");
+      });
+      dropdown.addEventListener("pointerenter", (event) => {
+        if (event.pointerType === "mouse") setOpen(true);
+      });
+      dropdown.addEventListener("pointerleave", () => {
+        if (!dropdown.contains(document.activeElement)) setOpen(false);
+      });
+      dropdown.addEventListener("focusin", () => setOpen(true));
+      dropdown.addEventListener("focusout", (event) => {
+        if (!dropdown.contains(event.relatedTarget)) setOpen(false);
+      });
+      dropdown.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+      nav.addEventListener("click", (event) => {
+        if (event.target.closest("a")) setOpen(false);
+      });
+      menuButton.addEventListener("click", () => setOpen(false));
+    })();
+  </script>
+</body>
+</html>
